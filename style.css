@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calcBody{
+  height: 650px;
+  width: 350px;
+  background-color: #eae9e9;      /*for dark #191919;*/
+  border-radius: 12px;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* calc display input */
+.calcDisplay{
+  height: 200px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 40px;
+  padding-left: 15px;
+  position: absolute;
+  top: 0;
+  caret-color: transparent;
+  cursor: default;
+}
+
+.calcBtns{
+  display: grid;
+  grid-template-rows: 80px 80px 80px 80px 80px;
+  grid-template-columns: 80px 80px 80px 80px;
+  /* background-color: red; */
+  align-items: center;
+  width: 305px;
+  /* margin: 20px 0; */
+  margin-top: 200px;
+}
+
+.btn{
+  height: 65px;
+  width: 65px;
+  background-color:#e8e8e8;   /*for dark #191919*/
+  color: #090909;
+  border: none;
+  border-radius: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all .3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #fff;    /*for dark box-shadow: 6px 6px 12px #191919, -6px -6px 12px black;*/
+}
+
+.btn:hover{
+  box-shadow: -6px -6px 12px #c5c5c5, 6px 6px 12px #fff;    /*for dark box-shadow: -6px -6px 12px black, 6px 6px 12px #191919;*/
+  transition: .5s all;
+}
+
+.radiobtn{
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+
+/* more option 3 dots  */
+.more{
+  height: 25px;
+  width: 15px;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.more:hover{
+  cursor: pointer;
+}
+    
+
+/* Themes */
+.themes{
+  height: 50px;
+  width: 70px;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  position: absolute;
+  top: 35px;
+  right: 22px;
+  font-size: 15px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.themes span:hover{
+  cursor: pointer;
+}
+
+.themes hr{
+  width: 70px;
+  margin: 2px 0;
+}
+
+/* utility class to highlight few buttons */
+.highlights{
+  color: rgb(240, 117, 17);
+}

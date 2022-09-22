@@ -1,0 +1,17 @@
+.calcBodyDark {
+  background-color: #191919;
+}
+
+.btnDark{
+  background-color: #191919;
+  color: white;
+  box-shadow: 6px 6px 12px #191919, -6px -6px 12px black;
+}
+
+.btnDark:hover{
+    box-shadow: -6px -6px 12px black, 6px 6px 12px #191919;
+}
+
+.highlights{
+    color: rgb(240, 117, 17);
+}
